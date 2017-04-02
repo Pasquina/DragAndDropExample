@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
         <ProjectGuid>{0944B0CF-E1E7-4BCD-B438-4082ABB644AD}</ProjectGuid>
@@ -34,3 +35,41 @@
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
+=======
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{0944B0CF-E1E7-4BCD-B438-4082ABB644AD}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="TwoListBoxes.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="TwoListBoxes">
+        <MSBuild Projects="TwoListBoxes.dproj"/>
+    </Target>
+    <Target Name="TwoListBoxes:Clean">
+        <MSBuild Projects="TwoListBoxes.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TwoListBoxes:Make">
+        <MSBuild Projects="TwoListBoxes.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="TwoListBoxes"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="TwoListBoxes:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="TwoListBoxes:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
+>>>>>>> 4566a6f2e28ca45c98c80ccc91c8d06eb6b3f973
