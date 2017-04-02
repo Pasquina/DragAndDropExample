@@ -1,0 +1,73 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Top
+    Size.Width = 640.000000000000000000
+    Size.Height = 81.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      Position.X = 40.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      OnMouseDown = Edit1MouseDown
+    end
+    object Button1: TButton
+      Position.X = 304.000000000000000000
+      Position.Y = 32.000000000000000000
+      TabOrder = 1
+      Text = 'Button1'
+      OnClick = Button1Click
+    end
+  end
+  object Panel2: TPanel
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 399.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object LeftListBox: TListBox
+      Align = Left
+      Size.Width = 320.000000000000000000
+      Size.Height = 399.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnDragOver = LeftListBoxDragOver
+      OnDragDrop = LeftListBoxDragDrop
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 316.000000000000000000
+      Viewport.Height = 395.000000000000000000
+    end
+    object RightListBox: TListBox
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 399.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      OnDragOver = RightListBoxDragOver
+      OnDragDrop = RightListBoxDragDrop
+      OnMouseDown = RightListBoxMouseDown
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 316.000000000000000000
+      Viewport.Height = 395.000000000000000000
+    end
+  end
+end
