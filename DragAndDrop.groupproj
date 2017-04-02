@@ -1,6 +1,6 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
-        <ProjectGuid>{0944B0CF-E1E7-4BCD-B438-4082ABB644AD}</ProjectGuid>
+        <ProjectGuid>{C1672949-0AA5-41F8-A775-A26E45C6EE77}</ProjectGuid>
     </PropertyGroup>
     <ItemGroup>
         <Projects Include="TwoListBoxes.dproj">
